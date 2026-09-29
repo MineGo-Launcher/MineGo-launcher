@@ -1,0 +1,163 @@
+    /* CTA */
+    .cta{
+      display:grid;grid-template-columns:auto 1fr auto auto;gap:28px;
+      align-items:center;padding:22px 28px;border:1px solid #a025ff;
+      border-radius:16px;background:linear-gradient(90deg,#0c0614,#09050f);
+      box-shadow:0 0 28px rgba(116,0,255,.18);
+    }
+    .cta-copy h3{font-size:24px;margin-bottom:5px}
+    .cta-copy p{color:#bdb2c8}
+    .platform-list{display:flex;gap:20px;color:#cfc5d9;font-size:13px}
+    footer{border-top:1px solid rgba(146,26,255,.4);padding:28px 0 38px;color:#9f94ab}
+    .footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .footer-brand{font-size:21px;font-weight:900;color:#fff}
+    .footer-brand span{color:#9d22ff}
+    .socials{display:flex;gap:18px}
+    @media(max-width:1050px){
+      nav{display:none}
+      .hero{grid-template-columns:1fr;padding-top:50px}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .cta{grid-template-columns:auto 1fr;justify-content:center}
+    }
+    @media(max-width:650px){
+      .nav{height:72px}.brand-logo{width:48px;height:48px}.brand span{font-size:22px}
+      .top-download{padding:11px 14px;font-size:12px}
+      h1{font-size:62px;letter-spacing:-3px}
+      .tagline{font-size:22px}
+      .features{grid-template-columns:1fr}
+      .cta{grid-template-columns:1fr;text-align:center}
+      .platforms,.hero-actions{justify-content:center}
+      .footer-row{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <div class="brand-logo">MG</div>
+      <span>MINE <b>GO</b></span>
+    </a>
+    <nav>
+      <a class="active" href="#home">⌂ &nbsp;Home</a>
+      <a href="#features">☆ &nbsp;Features</a>
+      <a href="#mods">◇ &nbsp;Mods</a>
+      <a href="#gallery">▧ &nbsp;Gallery</a>
+      <a href="#faq">? &nbsp;FAQ</a>
+    </nav>
+    <a class="btn top-download" id="topDownload" href="#">⇩ &nbsp;Download Launcher</a>
+  </div>
+</header>
+<main id="home">
+  <div class="container hero">
+    <div>
+      <div class="eyebrow">🚀 &nbsp; The Ultimate Minecraft Launcher</div>
+      <h1>MINE <span>GO</span></h1>
+      <div class="tagline">Play. Explore. Create. <span>Together.</span></div>
+      <p class="description">
+        MineGo is the ultimate Minecraft launcher, designed for performance,
+        customization and a seamless gaming experience. Join a growing
+        community and take your Minecraft journey to the next level.
+      </p>
+      <div class="hero-actions">
+        <a class="btn large" id="downloadHero" href="#">⇩ &nbsp; Download Now</a>
+        <a class="btn discord large" id="discordHero" href="#" target="_blank" rel="noopener">
+          ◉ &nbsp; Join Discord
+        </a>
+      </div>
+      <div class="platforms">
+        <span>▣ &nbsp; Windows</span>
+        <span>● &nbsp; macOS</span>
+        <span>♙ &nbsp; Linux</span>
+      </div>
+    </div>
+    <div class="preview-wrap" id="gallery">
+      <img src="launcher-preview.png" alt="MineGo launcher interface preview">
+    </div>
+  </div>
+  <section id="features">
+    <div class="container">
+      <div class="section-title">
+        <small>WHY CHOOSE</small>
+        <h2>MINE <span>GO?</span></h2>
+      </div>
+      <div class="features">
+        <div class="card">
+          <div class="icon">ϟ</div>
+          <h3>One Click Play</h3>
+          <p>Launch your favorite modpacks and versions with just one click.</p>
+        </div>
+        <div class="card" id="mods">
+          <div class="icon">◇</div>
+          <h3>Popular Modpacks</h3>
+          <p>Includes popular packs like Spunky BoostX, Spirity BoostX and Better Optimized.</p>
+        </div>
+        <div class="card">
+          <div class="icon">◌</div>
+          <h3>Fast &amp; Smooth</h3>
+          <p>Optimized for high performance and a smooth, low-lag experience.</p>
+        </div>
+        <div class="card">
+          <div class="icon">♙</div>
+          <h3>Active Community</h3>
+          <p>Join a friendly community of Minecraft players.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⬟</div>
+          <h3>Safe &amp; Secure</h3>
+          <p>Your account and data are kept protected.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faq">
+    <div class="container">
+      <div class="cta">
+        <div class="mini-logo">MG</div>
+        <div class="cta-copy">
+          <h3>Ready to Play?</h3>
+          <p>Download MineGo and start your Minecraft adventure today!</p>
+        </div>
+        <a class="btn large" id="downloadBottom" href="#">⇩ &nbsp; Download Now</a>
+        <a class="btn discord large" id="discordBottom" href="#" target="_blank" rel="noopener">
+          ◉ &nbsp; Join Discord
+        </a>
+        <div class="platform-list"><span>▣ Windows</span><span>● macOS</span><span>♙ Linux</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container footer-row">
+    <div class="footer-brand">MG &nbsp; MINE <span>GO</span></div>
+    <div>PLAY &nbsp; • &nbsp; CONNECT &nbsp; • &nbsp; EXPLORE</div>
+    <div class="socials">◉ &nbsp; ▶ &nbsp; ♥ &nbsp; ◎</div>
+    <div>© 2026 MineGo. All rights reserved.</div>
+  </div>
+</footer>
+<script>
+  /*
+    ================================
+    MINE GO LINKS — EDIT THESE
+    ================================
+    Put your real links between the quotes.
+    Example:
+      const DOWNLOAD_LINK = "https://example.com/MineGo-Setup.exe";
+      const DISCORD_LINK  = "https://discord.gg/yourserver";
+  */
+  const DOWNLOAD_LINK = "PASTE_YOUR_DOWNLOAD_LINK_HERE";
+  const DISCORD_LINK  = "https://discord.gg/5M7DeyybAm";
+  document.querySelectorAll("#topDownload,#downloadHero,#downloadBottom")
+    .forEach(btn => btn.href = DOWNLOAD_LINK);
+  document.querySelectorAll("#discordHero,#discordBottom")
+    .forEach(btn => btn.href = DISCORD_LINK);
+  // Smoothly prevents accidental navigation if a link has not been replaced yet.
+  document.querySelectorAll('a[href^="PASTE_"]').forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      alert("Please add your MineGo link in the JavaScript section at the bottom of index.html.");
+    });
+  });
+</script>
+</body>
+</html>
